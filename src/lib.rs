@@ -30,8 +30,8 @@
 //! * Trends
 //!   * [Exponential Moving Average (EMA)](indicators::ExponentialMovingAverage)
 //!   * [Hull Moving Average (HMA)](indicators::HullMovingAverage)
-//!   * [Weighted Moving Average (WMA)](indicators::WeightedMovingAverage)
-//!   * [Simple Moving Average (SMA)](indicators::SimpleMovingAverage)
+//!   * [Simple Moving Average (SMA)](crate::indicators::SimpleMovingAverage)
+//!   * [Weighted Moving Average (WMA)](crate::indicators::WeightedMovingAverage)
 //! * Oscillators
 //!   * [Relative Strength Index (RSI)](indicators::RelativeStrengthIndex)
 //!   * [Fast Stochastic](indicators::FastStochastic)

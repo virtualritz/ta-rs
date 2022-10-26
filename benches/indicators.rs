@@ -7,6 +7,10 @@ use ta::indicators::{
     OnBalanceVolume, PercentagePriceOscillator, QuantitativeQualitativeEstimation, RateOfChange,
     RelativeStrengthIndex, SimpleMovingAverage, SlowStochastic, StandardDeviation, TrueRange,
     WeightedMovingAverage,
+    ExponentialMovingAverage, FastStochastic, KeltnerChannel, Maximum, MeanAbsoluteDeviation,
+    Minimum, MoneyFlowIndex, MovingAverageConvergenceDivergence, OnBalanceVolume,
+    PercentagePriceOscillator, RateOfChange, RelativeStrengthIndex, SimpleMovingAverage,
+    SlowStochastic, StandardDeviation, TrueRange, WeightedMovingAverage,
 };
 use ta::{DataItem, Next};
 
@@ -38,7 +42,7 @@ macro_rules! bench_indicators {
             fn $indicator(bench: &mut Bencher) {
                 let items: Vec<DataItem> = (0..ITEMS_COUNT).map( |_| rand_data_item() ).collect();
                 let mut indicator = $indicator::default();
-                
+
                 bench.iter(|| {
                     for item in items.iter() {
                         black_box(indicator.next(item));
@@ -58,8 +62,10 @@ bench_indicators!(
     MeanAbsoluteDeviation,
     BollingerBands,
     ChandelierExit,
+    CommodityChannelIndex,
     EfficiencyRatio,
     FastStochastic,
+    HullMovingAverage
     KeltnerChannel,
     Maximum,
     Minimum,
@@ -67,17 +73,12 @@ bench_indicators!(
     MovingAverageConvergenceDivergence,
     OnBalanceVolume,
     PercentagePriceOscillator,
-    CommodityChannelIndex,
+    QuantitativeQualitativeEstimation
     RateOfChange,
     RelativeStrengthIndex,
     SimpleMovingAverage,
     SlowStochastic,
     StandardDeviation,
     TrueRange,
-<<<<<<< HEAD
     WeightedMovingAverage,
-    HullMovingAverage
-=======
-    QuantitativeQualitativeEstimation
->>>>>>> c49eab139000f150079d653c3f8aa799b942cafe
 );
