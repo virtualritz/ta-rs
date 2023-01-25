@@ -200,8 +200,6 @@ mod tests {
         dm_minus.next(9.);
         dm_minus.next(12.);
         dm_minus.next(11.);
-
-        println!("{}", dm_minus.next(11.))
     }
 
     #[test]
