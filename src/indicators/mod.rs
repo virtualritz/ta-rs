@@ -71,10 +71,12 @@ pub use self::money_flow_index::MoneyFlowIndex;
 mod on_balance_volume;
 pub use self::on_balance_volume::OnBalanceVolume;
 
+/*
 mod quantitative_qualitative_estimation;
 pub use self::quantitative_qualitative_estimation::{
     QuantitativeQualitativeEstimation, QuantitativeQualitativeEstimationOutput,
 };
+*/
 
 mod directional_movement;
 pub use self::directional_movement::{NegativeDirectionalMovement, PositiveDirectionalMovement};
