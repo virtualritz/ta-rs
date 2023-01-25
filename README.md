@@ -19,8 +19,9 @@ Technical analysis library for Rust.
 
 ## Getting Started
 
-Add to you `Cargo.toml`:
-```
+Add to your `Cargo.toml`:
+
+```toml
 [dependencies]
 ta = "0.5.0"
 ```
@@ -96,7 +97,6 @@ The following indicators are available:
   * Rate of Change (ROC)
   * On Balance Volume (OBV)
 
-
 ## Features
 
 * `serde` - allows to serialize and deserialize indicators. NOTE: the backward compatibility of serialized
@@ -104,7 +104,7 @@ data with the future versions of ta is not guaranteed because internal implement
 
 ## Running Benchmarks
 
-```
+```sh
 cargo bench
 ```
 
@@ -112,23 +112,22 @@ cargo bench
 
 You can support the project by donating [NEAR tokens](https://near.org).
 
-Our NEAR wallet address is `ta-rs.near`
-
+Our NEAR wallet address is `ta-rs.near`.
 
 ## License
 
 [MIT](https://github.com/greyblake/ta-rs/blob/master/LICENSE) © [Sergey Potapov](http://greyblake.com/)
 
-
 ## Contributors
 
-- [greyblake](https://github.com/greyblake) Potapov Sergey - creator, maintainer.
-- [Bartoshko](https://github.com/Bartoshko) - BollingerBands
-- [shreyasdeotare](https://github.com/shreyasdeotare) Shreyas Deotare - MoneyFlowIndex, OnBalanceVolume
-- [edwardycl](https://github.com/edwardycl) - StandardDeviation Implementation & More Efficient BollingerBands
-- [rideron89](https://github.com/rideron89) Ron Rider - Keltner Channel
-- [tirz](https://github.com/tirz) - CCI, CE, MAD, PPO, refactorings
-- [Devin Gunay](https://github.com/dgunay) - serde support
-- [Youngchan Lee](https://github.com/edwardycl) - bugfix
-- [tommady](https://github.com/tommady) - get rid of error-chain dependency
-- [menkaru](https://github.com/menkaru) - WMA, HMA
+- [greyblake](https://github.com/greyblake) Potapov Sergey – creator, maintainer.
+- [Bartoshko](https://github.com/Bartoshko) BollingerBands
+- [shreyasdeotare](https://github.com/shreyasdeotare) Shreyas Deotare – MoneyFlowIndex, OnBalanceVolume
+- [edwardycl](https://github.com/edwardycl) – StandardDeviation Implementation & more efficient BollingerBands
+- [rideron89](https://github.com/rideron89) Ron Rider – KeltnerChannel
+- [tirz](https://github.com/tirz) – CCI, CE, MAD, PPO, refactorings
+- [Devin Gunay](https://github.com/dgunay) – `serde` support
+- [Youngchan Lee](https://github.com/edwardycl) – bugfix
+- [tommady](https://github.com/tommady) – get rid of `error-chain` dependency
+- [menkaru](https://github.com/menkaru) – WMA, HMA
+- [Moritz Moeller](https:://github.com/virtualritz) – DI-/DI+, DM-/DM+, DX & ADX
