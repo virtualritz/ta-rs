@@ -2,15 +2,15 @@ use bencher::{benchmark_group, benchmark_main, black_box, Bencher};
 use rand::Rng;
 use ta::indicators::{
     AverageTrueRange, BollingerBands, ChandelierExit, CommodityChannelIndex, EfficiencyRatio,
-    ExponentialMovingAverage, FastStochastic, HullMovingAverage, KeltnerChannel, Maximum,
-    MeanAbsoluteDeviation, Minimum, MoneyFlowIndex, MovingAverageConvergenceDivergence,
-    OnBalanceVolume, PercentagePriceOscillator, QuantitativeQualitativeEstimation, RateOfChange,
-    RelativeStrengthIndex, SimpleMovingAverage, SlowStochastic, StandardDeviation, TrueRange,
-    WeightedMovingAverage,
-    ExponentialMovingAverage, FastStochastic, KeltnerChannel, Maximum, MeanAbsoluteDeviation,
-    Minimum, MoneyFlowIndex, MovingAverageConvergenceDivergence, OnBalanceVolume,
-    PercentagePriceOscillator, RateOfChange, RelativeStrengthIndex, SimpleMovingAverage,
-    SlowStochastic, StandardDeviation, TrueRange, WeightedMovingAverage,
+    ExponentialMovingAverage, ExponentialMovingAverage, FastStochastic, FastStochastic,
+    HullMovingAverage, KeltnerChannel, KeltnerChannel, Maximum, Maximum, MeanAbsoluteDeviation,
+    MeanAbsoluteDeviation, Minimum, Minimum, MoneyFlowIndex, MoneyFlowIndex,
+    MovingAverageConvergenceDivergence, MovingAverageConvergenceDivergence, OnBalanceVolume,
+    OnBalanceVolume, PercentagePriceOscillator, PercentagePriceOscillator,
+    QuantitativeQualitativeEstimation, RateOfChange, RateOfChange, RelativeStrengthIndex,
+    RelativeStrengthIndex, SimpleMovingAverage, SimpleMovingAverage, SlowStochastic,
+    SlowStochastic, StandardDeviation, StandardDeviation, TrueRange, TrueRange,
+    WeightedMovingAverage, WeightedMovingAverage,
 };
 use ta::{DataItem, Next};
 
