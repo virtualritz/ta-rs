@@ -93,8 +93,8 @@ fn simple_moving_average() -> Result<(), Box<dyn Error>> {
             .iter()
             .fold(
                 SimpleMovingAverage::new(test.time_period).unwrap(),
-                |mut sma, close| {
-                    sma.next(*close);
+                |mut sma, &close| {
+                    sma.next(close);
                     sma
                 },
             )
@@ -115,8 +115,8 @@ fn exponential_moving_average() -> Result<(), Box<dyn Error>> {
             .iter()
             .fold(
                 ExponentialMovingAverage::new(test.time_period).unwrap(),
-                |mut ema, close| {
-                    println!("{}", ema.next(*close));
+                |mut ema, &close| {
+                    ema.next(close);
                     ema
                 },
             )
